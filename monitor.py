@@ -18,3 +18,7 @@ class Monitor:
     def get_total_pixels(self):
         """Calculate how many pixels are on monitor."""
         return self.width * self.height
+
+    def __eq__(self, other):
+        """Check whether parsed object has the same monitor dimensions as this one."""
+        return self.get_resolution() == other.get_resolution()

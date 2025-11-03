@@ -13,7 +13,7 @@ class Monitor:
 
     def get_resolution(self):
         """Return a tuple of monitor width and height."""
-        return (self.width, self.height)
+        return self.width, self.height
 
     def get_total_pixels(self):
         """Calculate how many pixels are on monitor."""

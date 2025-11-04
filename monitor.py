@@ -21,4 +21,4 @@ class Monitor:
 
     def __eq__(self, other):
         """Check whether parsed object has the same monitor dimensions as this one."""
-        return self.get_resolution() == other.get_resolution()
+        return self.get_resolution() == (other.width, other.height)
